@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+      "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    
+    <definition name="base.definition" template="/WEB-INF/views/layout.jsp">        
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+        <put-attribute name="menu" value="" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+    </definition>
+    
+  <!--  <definition name="registerUserAccount" extends="base.definition">
+        <put-attribute name="menu" value="/WEB-INF/views/admins/adminMenu.jsp" />
+        <put-attribute name="body" value="/WEB-INF/views/admins/register.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/admins/adminLogout.jsp" />
+    </definition>
+     --> 
+    
+    <definition name="adminmenu" extends="base.definition">
+    	<put-attribute name="menu" value="/WEB-INF/views/adminmenu.jsp" />
+    </definition>
+    <definition name="viewstudents" extends="base.definition">
+    	<put-attribute name="menu" value="/WEB-INF/views/adminmenu.jsp" />
+    	<put-attribute name="body" value="/WEB-INF/views/viewstudents.jsp"></put-attribute>
+    </definition>
+    <definition name="extractstudent" extends="base.definition">
+    	<put-attribute name="menu" value="/WEB-INF/views/adminmenu.jsp" />
+    	<put-attribute name="body" value="/WEB-INF/views/extractstudent.jsp"></put-attribute>
+    </definition>
+    <definition name="range" extends="base.definition">
+    	<put-attribute name="menu" value="/WEB-INF/views/adminmenu.jsp" />
+    	<put-attribute name="body" value="/WEB-INF/views/range.jsp"></put-attribute>
+    </definition>
+    <definition name="rangestudents" extends="base.definition">
+    	<put-attribute name="menu" value="/WEB-INF/views/adminmenu.jsp" />
+    	<put-attribute name="body" value="/WEB-INF/views/rangestudents.jsp"></put-attribute>
+    </definition>
+    <definition name="zipcodespread" extends="base.definition">
+    	<put-attribute name="menu" value="/WEB-INF/views/adminmenu.jsp" />
+    	<put-attribute name="body" value="/WEB-INF/views/zipcodespread.jsp"></put-attribute>
+    </definition>
+     
+</tiles-definitions>
